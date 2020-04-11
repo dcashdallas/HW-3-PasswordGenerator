@@ -1,5 +1,6 @@
 # HW-3-PasswordGenerator
-This is a password generator. The user is presented with a series of prompts for password criteria.
+This is a password generator. 
+The user is presented with a series of prompts for password criteria.
 The user selects which criteria to include in the password.
 The user chooses a length of at least 8 characters and no more than 128 characters.
 The user chooses lowercase, uppercase, numeric, and/or special characters.

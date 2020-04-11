@@ -1,4 +1,3 @@
-
 var enter;
 var confirmNumber;
 var confirmCharacter;
@@ -15,11 +14,11 @@ var toUpper = function (x) {
     return x.toUpperCase();
 };
 
-
-var choices;
-
+space = [];
 
 alpha2 = alpha.map(toUpper);
+
+var choices;
 
 var get = document.querySelector("#generate");
 
@@ -27,7 +26,6 @@ get.addEventListener("click", function () {
     ps = generatePassword();
     document.getElementById("password").placeholder = ps;
 });
-
 
 function generatePassword() {
 
@@ -41,10 +39,10 @@ function generatePassword() {
 
     } else {
 
-        confirmNumber = prompt("Would you like to use Numbers in your password?");
-        confirmCharacter = prompt("Would you like to use Special Characters in your password?");
-        confirmUppercase = prompt("Would you like to use Uppercase letters in your password?");
-        confirmLowercase = prompt("Would you like to use Lowercase Letters in your password?");
+        confirmNumber = prompt("Would you like to use Numbers in your password?\n y = yes n = no");
+        confirmCharacter = prompt("Would you like to use Special Characters in your password?\n y = yes n = no");
+        confirmUppercase = prompt("Would you like to use Uppercase letters in your password?\n y = yes n = no");
+        confirmLowercase = prompt("Would you like to use Lowercase Letters in your password?\n y = yes n = no");
     };
 
     var y = true;
