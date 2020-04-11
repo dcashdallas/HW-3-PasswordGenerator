@@ -43,7 +43,10 @@ var generate = () => {
         alert("Your password does not meet the necessary requirements.");
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9d46bdfbf39e21b36c6f4794814466669cd078c8
     if (randomCharString !== "") {
         for (i = 1; i <= passwordLength; i++) {
             passwordString = passwordString + randomCharString.charAt(Math.floor(Math.random() * Math.floor((randomCharString.length) - 1)));
