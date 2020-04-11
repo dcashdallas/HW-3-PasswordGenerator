@@ -39,10 +39,10 @@ function generatePassword() {
 
     } else {
 
-        confirmNumber = prompt("Would you like to use Numbers in your password?\n y = yes n = no");
-        confirmCharacter = prompt("Would you like to use Special Characters in your password?\n y = yes n = no");
-        confirmUppercase = prompt("Would you like to use Uppercase letters in your password?\n y = yes n = no");
-        confirmLowercase = prompt("Would you like to use Lowercase Letters in your password?\n y = yes n = no");
+        confirmNumber = prompt("Would you like to use Numbers in your password?\n y/OK = yes Cancel = no");
+        confirmCharacter = prompt("Would you like to use Special Characters in your password?\n y/OK = yes Cancel = no");
+        confirmUppercase = prompt("Would you like to use Uppercase letters in your password?\n y/OK = yes Cancel = no");
+        confirmLowercase = prompt("Would you like to use Lowercase Letters in your password?\n y/OK = yes Cancel = no");
     };
 
     var y = true;
