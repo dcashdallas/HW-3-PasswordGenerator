@@ -11,13 +11,13 @@ number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-space = [];
-
-var choices;
-
 var toUpper = function (x) {
     return x.toUpperCase();
 };
+
+
+var choices;
+
 
 alpha2 = alpha.map(toUpper);
 
@@ -34,21 +34,23 @@ function generatePassword() {
     enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
 
     if (!enter) {
-        alert("This needs a value");
+        alert("This needs a value of 8 to 128. Please select Generate Password and begin again.");
     } else if (enter < 8 || enter > 128) {
 
         enter = parseInt(prompt("You must choose between 8 and 128"));
 
     } else {
 
-        confirmNumber = prompt("Will this contain numbers?");
-        confirmCharacter = prompt("Will this contain special characters?");
-        confirmUppercase = prompt("Will this contain Uppercase letters?");
-        confirmLowercase = prompt("Will this contain Lowercase letters?");
+        confirmNumber = prompt("Would you like to use Numbers in your password?");
+        confirmCharacter = prompt("Would you like to use Special Characters in your password?");
+        confirmUppercase = prompt("Would you like to use Uppercase letters in your password?");
+        confirmLowercase = prompt("Would you like to use Lowercase Letters in your password?");
     };
 
+    var y = true;
+    var n = false;
 
-    if (confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
+    if (!confirmCharacter && !confirmNumber && !confirmUppercase && !confirmLowercase) {
         choices = alert("You must choose a criteria!");
 
     }
