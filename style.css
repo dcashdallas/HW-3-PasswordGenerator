@@ -6,31 +6,20 @@
 
 html,
 body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
-}
-
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: black;
 }
 
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: red;
 }
 
-.card {
+.textbox {
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -38,38 +27,20 @@ header {
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
+  align-content: center;
   max-width: 800px;
-  padding: 30px 40px;
+  
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-body {
-  min-height: 100px;
-}
-
-.card-footer {
+.row-inner {
   text-align: center;
+  color: red;
 }
 
-.card-footer::before {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
-.card-footer::after {
-  content: " ";
-  display: block;
-  clear: both;
+.button{
+  height:20px; 
+  width:200px; 
+  margin: 0 auto;   
 }
 
 .btn {
@@ -82,10 +53,14 @@ header {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
-  margin: 16px 16px 16px 20px;
+  margin: 0 auto;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+}
+
+.generate{
+  margin: 0 auto;
 }
 
 button[disabled] {
@@ -93,13 +68,9 @@ button[disabled] {
   background: #c0c7cf;
 }
 
-.float-right {
-  float: right;
-}
+
 
 #password {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   border: none;
   display: block;
@@ -112,7 +83,7 @@ button[disabled] {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 2px solid #c0c7cf;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
